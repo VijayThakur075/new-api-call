@@ -17,22 +17,15 @@ function App() {
         First page.....
       </div>
       <Navbar bg="danger" variant="dark">
-    <Container>
-    
-    <Nav className="me-auto">
-      <Nav.Link  href="/book">Books</Nav.Link>
-      <Nav.Link href="/movie">Movies</Nav.Link>
-      <Nav.Link href="/characters">Characters</Nav.Link>
-      <Nav.Link href="/moviequote">MovieQuote</Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar>
-      <Route exact path="/book" component={Book} />
-      <Route path="/Movie" component={Movie} />
-      <Route path="/Characters" component={Characters} />
-      <Route path="/movie/:id/quote" component={MovieQuote} />
-
-
+        <Container>
+          <Nav className="me-auto">
+            <Nav.Link href="/book">Books</Nav.Link>
+            <Nav.Link href="/movie">Movies</Nav.Link>
+            <Nav.Link href="/characters">Characters</Nav.Link>
+            <Nav.Link href="/moviequote">MovieQuote</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
     </Router>
 
   );
